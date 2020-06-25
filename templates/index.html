@@ -1,0 +1,632 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<title>Farm 4.0</title>
+	<!--meta tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Husbandry Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--//meta tags ends here-->
+
+	<!--booststrap-->
+
+	<link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+	<!--//booststrap end-->
+
+	<!-- font-awesome icons -->
+	<link href="/static/css/font-awesome.css" rel="stylesheet">
+	<!-- //font-awesome icons -->
+	<!--stylesheets-->
+	<link href="/static/css/style.css" rel='stylesheet' type='text/css' media="all">
+	<!--//stylesheets-->
+	<link rel="stylesheet" href="/static/css/lightbox.css">
+	<!--gallery-->
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+	
+</head>
+
+<body>
+	<div class="header-outs">
+		<div class="w3-agile-logo">
+			<div class=" head-wl">
+				<div class="headder-w3">
+					<h1><a href="/">Farm 4.0</a></h1>
+				</div>
+
+				<!-- <div class="search-w3ls">
+					<form action="#" method="post">
+						<div class="input-group">
+							<div class="search-up">
+								<input type="search" class="form-control" name="search" id="search2" placeholder="Search" required="">
+							</div>
+							<span class="input-group-btn">
+							<button class="btn btn-default" type="submit"><span class="fa fa-search"></span></button>
+							</span>
+						</div>
+					</form>
+				</div> -->
+
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+		<div class="top-nav">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+
+					<!-- //header -->
+
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+						 aria-controls="navbar">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+                </button>
+					</div>
+
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav ">
+							<li><a href="/" class="scroll">Home</a></li>
+							<li><a href="#services" class="scroll">Environment</a></li>
+							<li><a href="#detect" class="scroll">Detect</a></li>
+							<li><a href="#team" class="scroll">Team</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</nav>
+		</div>
+
+
+		<!-- Slideshow 4 -->
+		<div class="slider">
+			<div class="callbacks_container">
+				<ul class="rslides" id="slider4">
+					<li>
+						<div class="slider-img">
+							<div class="container">
+								<div class="slider-info">
+									<h4>Environmental data</h4>
+									<p>We collect lightness, temperature, moisture, soil moisture from MQTT for future analyzing.</p>
+
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="slider-img ">
+							<div class="container">
+								<div class="slider-info">
+									<h4>Automatic control</h4>
+									<p>Arduino and RasberryPi act when environment is not suitable for your plants.</p>
+
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="slider-img">
+							<div class="container">
+								<div class="slider-info">
+									<h4>Security</h4>
+									<p>When someone enter your conservatory, warning will be sent to your Line.</p>
+
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- This is here just to demonstrate the callbacks -->
+	<!-- <ul class="events">
+      <li>Example 4 callback events</li>
+    </ul>-->
+	<!-- //banner -->
+	<!--Services-->
+	<div class="services" id="services">
+		<div class="container">
+			<h2 class="sub-title">Environmental data</h2>
+
+			<div class="banner-bottom-girds">
+				<div class="col-md-6  col-sm-6 col-xs-6  its-banner-grid">
+					<div class="white-shadow">
+						<div class=" white-right">
+							<h4>Temperature</h4>
+							<div id="temp"></div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="col-md-6  col-sm-6 col-xs-6  its-banner-grid">
+					<div class="white-shadow">
+						<div class="white-right">
+							<h4>Moisture</h4>
+							<div id="humid"></div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="col-md-6  col-sm-6 col-xs-6  its-banner-grid">
+					<div class="white-shadow">
+						<div class="white-right">
+							<h4>Lightness</h4>
+							<div id="light"></div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="col-md-6  col-sm-6 col-xs-6  its-banner-grid">
+					<div class="white-shadow">
+						<div class="white-right">
+							<h4>Soil moisture</h4>
+							<div id="soil_moisture"></div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+	<!--//Services-->
+
+	<!-- modal -->
+	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Husbandry</h4>
+				</div>
+				<div class="modal-body">
+					<div class="out-info">
+						<img src="/static/images/g1.jpg" alt="" />
+						<p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae,
+							eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellu</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	
+		<!-- counter-->
+	<div class="rate" id="rate">
+		<div class="container">
+			<h3 class="title clr">Current data</h3>
+			<div class="stats-info agileits w3layouts">
+				<div class="col-md-3 col-sm-3 col-xs-6 agileits w3layouts stats-grid stats-grid-1">
+					<div class="ser-icone"> <span class="fa fa-sun-o font" aria-hidden="true"></span>
+					</div>
+					<div class=" agileits-w3layouts counter">{{now_temp}}</div>
+					<div class="stat-info-w3ls">
+						<h4 class="agileits w3layouts">Temperature</h4>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6 agileits w3layouts stats-grid stats-grid-2">
+					<div class="ser-icone"> <span class="fa fa-tint font" aria-hidden="true"></span>
+					</div>
+					<div class=" agileits-w3layouts counter">{{now_humid}}</div>
+					<div class="stat-info-w3ls">
+						<h4 class="agileits w3layouts ">Moisture</h4>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6 stats-grid agileits w3layouts stats-grid-3">
+					<div class="ser-icone"> <span class="fa fa-envira font" aria-hidden="true"></span>
+					</div>
+					<div class=" agileits-w3layouts counter">{{now_light}}</div>
+					<div class="stat-info-w3ls">
+						<h4 class="agileits w3layouts ">Lightness</h4>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-6 stats-grid agileits w3layouts stats-grid-4">
+					<div class="ser-icone"> <span class="fa fa-flask font" aria-hidden="true"></span>
+					</div>
+					<div class=" agileits-w3layouts counter">{{now_soil_moisture}}</div>
+					<div class="stat-info-w3ls">
+						<h4 class="agileits w3layouts">Soil moisture</h4>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //counter-->
+
+	<!-- blog -->
+	<br><br>
+	<div class="detect" id="detect">
+		<div class="blog-two-grids">
+			<h3 class="title">Disease detection</h3>
+			<div class="blog-top-grids">
+				<div class="col-md-7 col-sm-7 blog-grid left-side">
+					<h4>Disease detection
+					</h4>
+					<p class="groom-right">We have trained 18160 tomato images to build a model. Now we can know if our plants (tomato in this situation) are healthy or not as soon as possible.</p>
+					<!-- Upload file -->
+					<form id='fupload' action="/detect/" method="post" enctype="multipart/form-data">
+						{% csrf_token %}
+						<div class='row' >
+							<div class='col-sm' style='position: relative;'>
+								<label class="btn btn-success">
+									<!-- <a href="#" data-toggle="modal" data-target="#myModal">Read More</a> -->
+									<input style="display:none;" type="file" name="img">
+									<input type="hidden" name='upfile' value='Select'>
+									Select
+								</label>
+							</div>
+							<div class='col-sm'>
+								<!-- <a href="#" data-toggle="modal" data-target="#myModal">Read More</a> -->
+								<label class="btn btn-success">
+									Upload
+									<input type="submit" value="Upload" style="display:none;">
+								</label>
+							</div>
+						</div>		
+					</form>
+				</div>
+				<div class="col-md-5 col-sm-5 blog-gr">
+					<!-- {{ last.img_url.url }} -->
+				</div>
+				<div class="clearfix"> </div>
+
+			
+
+			</div>
+		</div>
+	</div>
+	<!-- //blog -->
+
+
+
+
+	<!-- team-->
+	<div class="team agileits" id="team">
+		<div class="team-info">
+			<div class="container">
+				<div class="team-row" >
+					<h3 class="title">Our Team</h3>
+					<div class="col-md-3 col-sm-6 col-xs-6 team-grids" style='width:20%;'>
+						<div class="team-agile-img">
+							<a href="#"><img src="/static/images/1.jpg" alt="img"></a>
+							<div class="view-caption">
+								<div class="w3ls-info">
+									<h4 style='font-size: 20px; font-family:Microsoft JhengHei; '>楊宗融</h4>
+								</div>
+								<ul>
+									<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6 team-grids" style='width:20%;'>
+						<div class="team-agile-img">
+							<a href="#"><img src="/static/images/2.jpg" alt="img"></a>
+							<div class="view-caption">
+								<div class="w3ls-info">
+									<h4 style='font-size: 20px; font-family:Microsoft JhengHei; '>蔣昱劭 </h4>
+								</div>
+								<ul>
+									<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6 team-grids" style='width:20%;'>
+						<div class="team-agile-img">
+							<a href="#"><img src="/static/images/3.jpg" alt="img"></a>
+							<div class="view-caption">
+								<div class="w3ls-info">
+									<h4 style='font-size: 20px; font-family:Microsoft JhengHei; '>陳暉政</h4>
+								</div>
+								<ul>
+									<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6 team-grids" style='width:20%;'> 
+						<div class="team-agile-img">
+							<a href="#"><img src="/static/images/4.jpg" alt="img"></a>
+							<div class="view-caption">
+								<div class="w3ls-info">
+									<h4 style='font-size: 20px; font-family:Microsoft JhengHei; '>林豊鈞</h4>
+								</div>
+								<ul>
+									<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6 team-grids" style='width:20%;'>
+						<div class="team-agile-img">
+							<a href="#"><img src="/static/images/5.jpg" alt="img"></a>
+							<div class="view-caption">
+								<div class="w3ls-info">
+									<h4 style='font-size: 20px; font-family:Microsoft JhengHei; '>黃千翔</h4>
+								</div>
+								<ul>
+									<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //team-->
+	<footer>
+		<div class="container">
+			<div class="col-md-7 col-sm-8 header-side">
+				<p>© 2020 Husbandry. All Rights Reserved | Design by Plants saver.</a></p>
+			</div>
+			<div class="col-md-5 col-sm-4 header-side">
+				<div class="buttom-social-grids">
+
+					<ul>
+						<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+						<li><a href="#"><span class="fa fa-twitter"></span></a></li>
+						<li><a href="#"><span class="fa fa-rss"></span></a></li>
+						<li><a href="#"><span class="fa fa-vk"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--//contact-->
+	<!--js working-->
+	<script src='/static/js/jquery-2.2.3.min.js'></script>
+
+	<!-- //js  working-->
+
+	<!-- gallery -->
+	<script src="/static/js/lightbox-plus-jquery.min.js"></script>
+	<!-- //gallery -->
+	<script src="/static/js/responsiveslides.min.js"></script>
+
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 4
+			$("#slider4").responsiveSlides({
+				auto: true,
+				pager: true,
+				nav: false,
+				speed: 900,
+				namespace: "callbacks",
+				before: function () {
+					$('.events').append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$('.events').append("<li>after event fired.</li>");
+				}
+			});
+
+		});
+	</script>
+	<!--// banner-->
+	<!-- OnScroll-Number-Increase-JavaScript -->
+	<script src="/static/js/jquery.waypoints.min.js"></script>
+	<script src="/static/js/jquery.countup.js"></script>
+	<script>
+		$('.counter').countUp();
+	</script>
+	<!-- //OnScroll-Number-Increase-JavaScript -->
+	<!-- start-smoth-scrolling -->
+	<script src="/static/js/move-top.js"></script>
+	<script src="/static/js/easing.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+
+	<!-- for-bottom-to-top smooth scrolling -->
+	<script>
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- //for-bottom-to-top smooth scrolling -->
+
+	<!--bootstrap-->
+	<script src="/static/js/bootstrap.js"></script>
+	<!--// bootstrap-->
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- Hightcharts JS -->
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+	<script>
+        $(document).ready(function (){
+			
+            RunHighchart("#temp");
+			RunHighchart("#humid");
+			RunHighchart("#light");
+			RunHighchart("#soil_moisture");
+			 
+        });
+	</script>
+	<script>
+
+		// Highchart
+		function RunHighchart(container) {
+		  
+		  var mytitle;
+		  var Xtitle;
+		  var YTitle
+		  var mytooltip;
+		  var mydata;
+		  var colorLine;
+		  var mydataName;
+		  var mytime=[];
+
+		  switch (container){
+				case "#temp":
+						mytitle = '';
+						Xtitle = '';
+						// YTitle = '(\xB0C)';
+						mytooltip = '\xB0C';
+						mydata = {{temp}};
+						colorLine = 'lightgreen';
+						mydataName = 'Temperature';
+						{% for i in time_temp %}
+							tmp = '{{ i |date:"m-d H:i"}}';
+							mytime.push(tmp);
+						{%  endfor %}
+
+					break;
+				case "#humid":
+						mytitle = '';
+						Xtitle = '';
+						YTitle = '';
+						mytooltip = '%';
+						mydata = {{humid}};
+						colorLine = 'lightblue';
+						mydataName = 'Moisture';
+						{% for i in time_humid %}
+							tmp = '{{ i |date:"m-d H:i"}}';
+							mytime.push(tmp);
+						{%  endfor %}
+					break;
+				case "#light":
+						mytitle = '';
+						Xtitle = '';
+						YTitle = '';
+						mytooltip = '';
+						mydata = {{light}};
+						colorLine = 'yellow';
+						mydataName = 'Lightness';
+						{% for i in time_light %}
+							tmp = '{{ i |date:"m-d H:i"}}';
+							mytime.push(tmp);
+						{%  endfor %}
+					break;
+				case "#soil_moisture":
+						mytitle = '';
+						Xtitle = '';
+						YTitle = '';
+						mytooltip = '';
+						mydata = {{soil_moisture}};
+						colorLine = 'pink';
+						mydataName = 'Soil moisture';
+						{% for i in time_soil_moisture %}
+							tmp = '{{ i |date:"m-d H:i"}}';
+							mytime.push(tmp);
+						{%  endfor %}
+					break;
+				default:
+					console.log(container);
+					break;	
+			}
+	
+			var chart = {
+					type: 'line',	// line, bar, pie
+					style: {
+						fontFamily: 'Microsoft JhengHei'
+					}
+    		};
+		  	var title = {
+			   text: mytitle   
+		   };
+
+			var subtitle = {
+		        text: Xtitle
+		   };
+		   var xAxis = {
+				categories: mytime
+		   };
+		   var yAxis = {
+			  title: {
+				 text: YTitle
+			  },
+			  plotLines: [{
+				 value: 0,
+				 width: 1,
+				 color: '#808080'
+			  }]
+		   };   
+		   
+		   var tooltip = {
+	      valueSuffix: mytooltip
+	   }
+
+		   var legend = {
+			  layout: 'horizontal',
+			  align: 'right',
+			  verticalAlign: 'top',
+			  borderWidth: 0
+		   };
+
+			 var series =  [
+			{
+				name: '',
+				color: colorLine,
+				data: mydata
+			}, 
+   		];
+		   var json = {};
+		   json.chart = chart;
+		   json.title = title;
+		   json.subtitle = subtitle;
+		   json.xAxis = xAxis;
+		   json.yAxis = yAxis;
+		   json.tooltip = tooltip;
+		   json.legend = legend;
+		   json.series = series;
+	
+		   $(container).highcharts(json);
+		} // end RunHighchart function
+	
+		
+	</script>
+</body>
+
+</html>
